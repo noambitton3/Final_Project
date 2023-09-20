@@ -25,3 +25,4 @@ TEXT_1_3_SIZE = 50
 TEXT_2_SIZE = 80
 PLAY_SMILE_PHOTO = pygame.image.load('smile_2.png')
 PLAY_SMILE_PHOTO = pygame.transform.scale(PLAY_SMILE_PHOTO, (250, 250))
+

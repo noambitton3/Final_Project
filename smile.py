@@ -13,7 +13,6 @@ def create_smile_screen():
     smile_explanation(consts2.TEXT_SMILE3, consts2.TEXT_SMILE3_LOCATION, consts2.TEXT_1_3_SIZE)
     pygame.display.flip()
 
-
 def draw_title_smile():
     screen.draw_title(consts2.TITLE_SMILE, consts2.TITLE_SMILE_SIZE,
                       consts.STARTING_COLOR, consts2.TITLE_SMILE_LOCATION)

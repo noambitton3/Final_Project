@@ -13,7 +13,6 @@ def create_screen():
     call_visit_down_text()
     pygame.display.flip()
 
-
 def draw_title_call_visit():
     screen.draw_title(consts2.TITLE_CALL_VISIT, consts.STARTING_FONT_SIZE,
                       consts.STARTING_COLOR, consts.STARTING_LOCATION)
