@@ -63,6 +63,12 @@ CHOOSE_COLOR = WHITE
 CHOOSE_SIZE = 70
 CHOOSE_LOCATION = (397, 342)
 
+# random deed text (screen 2)
+DEED_COLOR = BLACK
+DEED_SIZE = 80
+DEED_LOCATION = (300, 320)
+
+
 # explaining the program
 EXPLAIN_TEXT = ("This is a program "
                 "that gives you the opportunity "

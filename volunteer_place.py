@@ -1,6 +1,7 @@
 import consts
 import random
 
+
 def random_volunteer(list):
     random_vol = random.choice(list)
     return random_vol
