@@ -81,3 +81,19 @@ EXPLAIN_LOCATION = (40, 560)
 # starting button photo
 PLAY_BUTTON_PHOTO = pygame.image.load('button.png')
 PLAY_BUTTON_PHOTO = pygame.transform.scale(PLAY_BUTTON_PHOTO, (300, 200))
+
+# screen2 button photo
+SCREEN_2_BUTTON_PHOTO = pygame.image.load('screen2_button.png')
+SCREEN_2_BUTTON_PHOTO = pygame.transform.scale(SCREEN_2_BUTTON_PHOTO, (350, 250))
+
+# screen2 left button text
+LEFT_BUTTON_TEXT = "agree"
+LEFT_BUTTON_COLOR = WHITE
+LEFT_BUTTON_SIZE = 70
+LEFT_BUTTON_LOCATION = (185, 515)
+
+# screen2 right button text
+RIGHT_BUTTON_TEXT = "choose again"
+RIGHT_BUTTON_COLOR = WHITE
+RIGHT_BUTTON_SIZE = 50
+RIGHT_BUTTON_LOCATION = (590, 525)
