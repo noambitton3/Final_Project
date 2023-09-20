@@ -1,5 +1,6 @@
 import pygame
 import screen
+import call_visit
 import screen2
 import consts
 
