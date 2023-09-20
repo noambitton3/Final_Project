@@ -1,5 +1,6 @@
 import pygame
 import screen
+import call_visit
 import screen2
 import consts
 
@@ -23,7 +24,8 @@ def handle_user_events():
         if event.type == pygame.MOUSEBUTTONDOWN:
             mouse = mouse_location()
             if 350 <= mouse[0] <= 650 and 275 <= mouse[1] <= 475:
-                screen2.draw_screen()
+                # screen2.draw_screen()
+                call_visit.create_screen()
 
 
 def mouse_location():
