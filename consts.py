@@ -69,8 +69,8 @@ EXPLAIN_TEXT = ("This is a program "
                 "to contribute to the community "
                 "through a good deed")
 EXPLAIN_COLOR = BLACK
-EXPLAIN_SIZE = 30
-EXPLAIN_LOCATION = (200, 450)
+EXPLAIN_SIZE = 23
+EXPLAIN_LOCATION = (40, 560)
 
 # starting button photo
 PLAY_BUTTON_PHOTO = pygame.image.load('button.png')
