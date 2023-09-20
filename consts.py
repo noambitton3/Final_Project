@@ -38,19 +38,40 @@ COMMUNITY_SERVICE = {'Ramat Gan': {'elderly people': ["עמך- ביקורי בי
                 'Earth': ["צביעת שולחנות וגדרות בפארקים", "סיוע בגינון ופיתוח גינות קהילתיות"]}}
 
 
+# window size
 WINDOW_WIDTH = 1000
 WINDOW_HEIGHT = 750
 
+# colors
 BACKGROUND_COLOR = (162, 201, 206)
 BLACK = (0, 0, 0)
 WHITE = (255, 255, 255)
 
+# fonts
 TEXT_FONT_NAME = "Calibri"
 TITLE_FONT_NAME = "georgia"
+
+# starting title
 STARTING_MESSAGE = "Daily Good"
 STARTING_FONT_SIZE = int(0.15 * WINDOW_WIDTH)
 STARTING_COLOR = BLACK
 STARTING_LOCATION = (0.12 * WINDOW_WIDTH, 10)
 
+# starting button text
+CHOOSE_TEXT = "Choose"
+CHOOSE_COLOR = WHITE
+CHOOSE_SIZE = 70
+CHOOSE_LOCATION = (397, 342)
+
+# explaining the program
+EXPLAIN_TEXT = ("This is a program "
+                "that gives you the opportunity "
+                "to contribute to the community "
+                "through a good deed")
+EXPLAIN_COLOR = BLACK
+EXPLAIN_SIZE = 30
+EXPLAIN_LOCATION = (200, 450)
+
+# starting button photo
 PLAY_BUTTON_PHOTO = pygame.image.load('button.png')
 PLAY_BUTTON_PHOTO = pygame.transform.scale(PLAY_BUTTON_PHOTO, (300, 200))
