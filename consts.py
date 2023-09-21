@@ -39,8 +39,8 @@ COMMUNITY_SERVICE = {'Ramat Gan': {'elderly people': ["עמך- ביקורי בי
 
 
 # window size
-WINDOW_WIDTH = 1000
-WINDOW_HEIGHT = 750
+WINDOW_WIDTH = 750
+WINDOW_HEIGHT = 500
 
 # colors
 BACKGROUND_COLOR = (162, 201, 206)
@@ -61,7 +61,7 @@ STARTING_LOCATION = (0.12 * WINDOW_WIDTH, 10)
 CHOOSE_TEXT = "Choose"
 CHOOSE_COLOR = WHITE
 CHOOSE_SIZE = 70
-CHOOSE_LOCATION = (397, 342)
+CHOOSE_LOCATION = (270, 225)
 
 # random deed text (screen 2)
 DEED_COLOR = BLACK
@@ -75,8 +75,8 @@ EXPLAIN_TEXT = ("This is a program "
                 "to contribute to the community "
                 "through a good deed")
 EXPLAIN_COLOR = BLACK
-EXPLAIN_SIZE = 23
-EXPLAIN_LOCATION = (40, 560)
+EXPLAIN_SIZE = 18
+EXPLAIN_LOCATION = (20, 450)
 
 # starting button photo
 PLAY_BUTTON_PHOTO = pygame.image.load('button.png')

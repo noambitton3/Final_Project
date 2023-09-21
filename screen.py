@@ -8,7 +8,7 @@ pygame.display.set_caption("THE DAILY GOOD")
 def draw_screen():
     screen.fill(consts.BACKGROUND_COLOR)
     draw_starting_message()
-    screen.blit(consts.PLAY_BUTTON_PHOTO, (350, 275))
+    screen.blit(consts.PLAY_BUTTON_PHOTO, (225, 150))
     draw_choose()
     draw_explanation()
     pygame.display.flip()
