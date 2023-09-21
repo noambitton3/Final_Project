@@ -6,6 +6,7 @@ import consts
 import smile
 import food_donate
 import donate_money
+import recycling
 
 state = {
     "is_window_open": True,
@@ -13,7 +14,8 @@ state = {
     "second_window_open": False,
     "food_window_open": False,
     "money_window_open": False,
-    "second_money_window_open": False
+    "second_money_window_open": False,
+    'recycling_window_open': False
 }
 
 
@@ -31,6 +33,8 @@ def main():
             money_handle_user_events()
         if state["second_money_window_open"]:
             money_handle_user_events()
+        if state['recycling_window_open']:
+            recycling_handle_user_events()
     pygame.display.flip()
 
 
@@ -105,6 +109,20 @@ def money_handle_user_events():
                 amount = 500
 
 
+def recycling_handle_user_events():
+    for event in pygame.event.get():
+        if event.type == pygame.QUIT:
+            state["is_window_open"] = False
+        if event.type == pygame.MOUSEBUTTONDOWN:
+            mouse = mouse_location()
+            # if 70 <= mouse[0] <= 270 and 200 <= mouse[1] <= 300:
+            #     food_donate.tel_aviv()
+            # if 285 <= mouse[0] <= 485 and 200 <= mouse[1] <= 300:
+            #     food_donate.jerusalem()
+            # if 500 <= mouse[0] <= 700 and 200 <= mouse[1] <= 300:
+            #     food_donate.petah_tikva()
+
+
 def mouse_location():
     return pygame.mouse.get_pos()
 
@@ -122,6 +140,11 @@ def decide(name):
         donate_money.create_screen()
         state["money_window_open"] = True
         state["second_window_open"] = False
+    elif name == 'recycle':
+        recycling.create_screen()
+        state["second_window_open"] = False
+        state['recycling_window_open'] = True
+
 
 
 if __name__ == '__main__':

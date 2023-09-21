@@ -84,3 +84,19 @@ PRODUCT_1 = '- Bread'
 PRODUCT_2 = '- Milk'
 PRODUCT_3 = '- Rice'
 PRODUCT_4 = '- Meat'
+
+# recycling
+GREEN_BIN_PHOTO = pygame.image.load('green bin.png')
+GREEN_BIN_PHOTO = pygame.transform.scale(GREEN_BIN_PHOTO, (170, 200))
+ORANGE_BIN_PHOTO = pygame.image.load('orange bin.png')
+ORANGE_BIN_PHOTO = pygame.transform.scale(ORANGE_BIN_PHOTO, (170, 200))
+BLUE_BIN_PHOTO = pygame.image.load('blue bin.png')
+BLUE_BIN_PHOTO = pygame.transform.scale(BLUE_BIN_PHOTO, (170, 200))
+
+RECYCLING_TITLE = 'Recycling'
+RECYCLING_TITLE_SIZE = 90
+RECYCLING_TITLE_LOCATION = (180, 20)
+
+GREEN_BIN_PRODUCT = 'Banana'
+GREEN_BIN_PRODUCT_SIZE = 90
+GREEN_BIN_PRODUCT_LOCATION = (180, 20)
