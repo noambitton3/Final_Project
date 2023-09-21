@@ -7,17 +7,22 @@ import volunteer_place
 def draw_screen():
     screen.screen.fill(consts.BACKGROUND_COLOR)
     screen.draw_starting_message()
-    deed = draw_deed()
+    draw_deed(deed)
     draw_button()
     pygame.display.flip()
     return deed
 
 
-def draw_deed():
-    deed = volunteer_place.random_volunteer(consts.VOLUNTEER_LIST)
+def choose_deed():
+    return volunteer_place.random_volunteer(consts.VOLUNTEER_LIST)
+
+
+deed = choose_deed()
+
+
+def draw_deed(deed):
     screen.draw_text(deed, consts.DEED_SIZE,
                      consts.DEED_COLOR, consts.DEED_LOCATION)
-    return deed
 
 
 def draw_button():
