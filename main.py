@@ -5,6 +5,7 @@ import screen2
 import consts
 import smile
 import food_donate
+import donate_money
 
 state = {
     "is_window_open": True,
@@ -25,6 +26,8 @@ def main():
             second_handle_user_events()
         if state["food_window_open"]:
             food_handle_user_events()
+        if state["money_window_open"]:
+            money_handle_user_events()
     pygame.display.flip()
 
 
@@ -59,6 +62,17 @@ def food_handle_user_events():
             state["is_window_open"] = False
         if event.type == pygame.MOUSEBUTTONDOWN:
             mouse = mouse_location()
+
+
+def money_handle_user_events():
+    user_text = ""
+    for event in pygame.event.get():
+        if event.type == pygame.QUIT:
+            state["is_window_open"] = False
+        if event.type == pygame.MOUSEBUTTONDOWN:
+            mouse = mouse_location()
+        if event.type == pygame.KEYDOWN:
+            user_text += event.unicode
 
 
 def mouse_location():
