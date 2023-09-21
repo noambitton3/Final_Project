@@ -64,6 +64,24 @@ MONEY_FONT_SIZE = 77
 MONEY_COLOR = BLACK
 MONEY_LOCATION = STARTING_LOCATION
 
+# money1 text
+MONEY1 = "How much money do you want to donate?"
+MONEY1_FONT_SIZE = 26
+MONEY1_COLOR = BLACK
+MONEY1_LOCATION = (150, 110)
+
+# money2 text
+MONEY2 = "these are our places, choose one of the options:"
+MONEY2_FONT_SIZE = MONEY1_FONT_SIZE
+MONEY2_COLOR = BLACK
+MONEY2_LOCATION = STARTING_LOCATION
+
+# money3 text
+MONEY3 = "Thank you for your donation!"
+MONEY3_FONT_SIZE = MONEY1_FONT_SIZE
+MONEY3_COLOR = BLACK
+MONEY3_LOCATION = STARTING_LOCATION
+
 # starting button text
 CHOOSE_TEXT = "Choose"
 CHOOSE_COLOR = WHITE
