@@ -6,7 +6,11 @@ import consts
 import smile
 
 state = {
-    "is_window_open": True
+    "is_window_open": True,
+    "first_window_open": True,
+    "second_window_open": False,
+    "smile_window_open": False,
+    "call_window_open": False
 }
 
 
@@ -14,11 +18,14 @@ def main():
     pygame.init()
     screen.draw_screen()
     while state["is_window_open"]:
-        handle_user_events()
+        if state["first_window_open"]:
+            first_handle_user_events()
+        if state["second_window_open"]:
+            second_handle_user_events()
     pygame.display.flip()
 
 
-def handle_user_events():
+def first_handle_user_events():
     for event in pygame.event.get():
         if event.type == pygame.QUIT:
             state["is_window_open"] = False
@@ -26,10 +33,19 @@ def handle_user_events():
             mouse = mouse_location()
             if 225 <= mouse[0] <= 525 and 150 <= mouse[1] <= 350:
                 screen2.draw_screen()
+                state["first_window_open"] = False
+                state["second_window_open"] = True
+
+
+def second_handle_user_events():
+    for event in pygame.event.get():
+        if event.type == pygame.QUIT:
+            state["is_window_open"] = False
         if event.type == pygame.MOUSEBUTTONDOWN:
             mouse = mouse_location()
             if 70 <= mouse[0] <= 320 and 350 <= mouse[1] <= 500:
                 decide(screen2.deed)
+
 
 
 def mouse_location():

@@ -10,7 +10,6 @@ def draw_screen():
     draw_deed(deed)
     draw_button()
     pygame.display.flip()
-    return deed
 
 
 def choose_deed():
