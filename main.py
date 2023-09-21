@@ -32,7 +32,7 @@ def mouse_location():
     return pygame.mouse.get_pos()
 
 
-def deside(name):
+def decide(name):
     if name == "call or visit":
         call_visit.create_screen()
     elif name == "smile to the world":
