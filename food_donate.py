@@ -33,4 +33,42 @@ def draw_button():
     screen.draw_text(consts2.THIRD_BUTTON_TEXT, consts2.THIRD_BUTTON_SIZE,
                      consts2.THIRD_BUTTON_COLOR, consts2.THIRD_BUTTON_LOCATION)
 
-#def tel_aviv():
+
+def go_to_text():
+    screen.draw_text(consts2.AFTER_CHOOSE_CITY_TEXT, consts2.AFTER_CHOOSE_CITY_TEXT_SIZE,
+                     consts.EXPLAIN_COLOR, consts2.AFTER_CHOOSE_CITY_TEXT_LOCATION)
+
+
+def city_addresses_tel_aviv():
+    screen.draw_text(consts2.TEL_AVIV_ADDRESS, consts2.ADDRESS_SIZE,
+                     consts.EXPLAIN_COLOR, consts2.ADDRESS_LOCATION)
+
+def city_addresses_jerusalem():
+    screen.draw_text(consts2.JERUSALEM_ADDRESS, consts2.ADDRESS_SIZE,
+                     consts.EXPLAIN_COLOR, consts2.ADDRESS_LOCATION)
+
+def city_addresses_petah_tikva():
+    screen.draw_text(consts2.PETAH_TIKVA_ADDRESS, consts2.ADDRESS_SIZE,
+                     consts.EXPLAIN_COLOR, consts2.ADDRESS_LOCATION)
+
+
+def tel_aviv():
+    create_screen()
+    go_to_text()
+    city_addresses_tel_aviv()
+    pygame.display.flip()
+
+
+def jerusalem():
+    create_screen()
+    go_to_text()
+    city_addresses_jerusalem()
+    pygame.display.flip()
+
+
+
+def petah_tikva():
+    create_screen()
+    go_to_text()
+    city_addresses_petah_tikva()
+    pygame.display.flip()

@@ -62,12 +62,12 @@ def food_handle_user_events():
             state["is_window_open"] = False
         if event.type == pygame.MOUSEBUTTONDOWN:
             mouse = mouse_location()
-            if 70 <= mouse[0] <= 270 and 200<= mouse[1] <= 300:
-                food_donate.create_screen()
+            if 70 <= mouse[0] <= 270 and 200 <= mouse[1] <= 300:
+                food_donate.tel_aviv()
             if 285 <= mouse[0] <= 485 and 200 <= mouse[1] <= 300:
-                food_donate.create_screen()
+                food_donate.jerusalem()
             if 500 <= mouse[0] <= 700 and 200 <= mouse[1] <= 300:
-                food_donate.create_screen()
+                food_donate.petah_tikva()
 
 
 def money_handle_user_events():
