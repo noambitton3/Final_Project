@@ -24,7 +24,7 @@ def handle_user_events():
             state["is_window_open"] = False
         if event.type == pygame.MOUSEBUTTONDOWN:
             mouse = mouse_location()
-            if 350 <= mouse[0] <= 650 and 275 <= mouse[1] <= 475:
+            if 225 <= mouse[0] <= 525 and 150 <= mouse[1] <= 350:
                 deed = screen2.draw_screen()
 
 
