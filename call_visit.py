@@ -7,11 +7,12 @@ import screen
 def create_screen():
     screen.screen.fill(consts.BACKGROUND_COLOR)
     draw_title_call_visit()
-    screen.screen.blit(consts2.PLAY_PHONE_PHOTO, (150, 350))
-    screen.screen.blit(consts2.PLAY_GRANDMA_PHOTO, (550, 250))
+    screen.screen.blit(consts2.PLAY_PHONE_PHOTO, (100, 230))
+    screen.screen.blit(consts2.PLAY_GRANDMA_PHOTO, (450, 175))
     call_visit_explanation()
     call_visit_down_text()
     pygame.display.flip()
+
 
 def draw_title_call_visit():
     screen.draw_title(consts2.TITLE_CALL_VISIT, consts.STARTING_FONT_SIZE,
