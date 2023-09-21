@@ -27,3 +27,4 @@ def draw_button():
     screen.screen.blit(consts.SCREEN_2_BUTTON_PHOTO, (550, 450))
     screen.draw_text(consts.RIGHT_BUTTON_TEXT, consts.RIGHT_BUTTON_SIZE,
                      consts.RIGHT_BUTTON_COLOR, consts.RIGHT_BUTTON_LOCATION)
+
