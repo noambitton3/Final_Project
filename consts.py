@@ -65,8 +65,8 @@ CHOOSE_LOCATION = (270, 225)
 
 # random deed text (screen 2)
 DEED_COLOR = BLACK
-DEED_SIZE = 80
-DEED_LOCATION = (300, 320)
+DEED_SIZE = 60
+DEED_LOCATION = (200, 210)
 
 
 # explaining the program
@@ -84,16 +84,16 @@ PLAY_BUTTON_PHOTO = pygame.transform.scale(PLAY_BUTTON_PHOTO, (300, 200))
 
 # screen2 button photo
 SCREEN_2_BUTTON_PHOTO = pygame.image.load('screen2_button.png')
-SCREEN_2_BUTTON_PHOTO = pygame.transform.scale(SCREEN_2_BUTTON_PHOTO, (350, 250))
+SCREEN_2_BUTTON_PHOTO = pygame.transform.scale(SCREEN_2_BUTTON_PHOTO, (250, 150))
 
 # screen2 left button text
 LEFT_BUTTON_TEXT = "agree"
 LEFT_BUTTON_COLOR = WHITE
-LEFT_BUTTON_SIZE = 70
-LEFT_BUTTON_LOCATION = (185, 515)
+LEFT_BUTTON_SIZE = 40
+LEFT_BUTTON_LOCATION = (145, 390)
 
 # screen2 right button text
 RIGHT_BUTTON_TEXT = "choose again"
 RIGHT_BUTTON_COLOR = WHITE
-RIGHT_BUTTON_SIZE = 50
-RIGHT_BUTTON_LOCATION = (590, 525)
+RIGHT_BUTTON_SIZE = 40
+RIGHT_BUTTON_LOCATION = (455, 390)
