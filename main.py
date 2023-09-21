@@ -25,12 +25,18 @@ def handle_user_events():
         if event.type == pygame.MOUSEBUTTONDOWN:
             mouse = mouse_location()
             if 350 <= mouse[0] <= 650 and 275 <= mouse[1] <= 475:
-                #screen2.draw_screen()
-                smile.create_smile_screen()
+                deed = screen2.draw_screen()
 
 
 def mouse_location():
     return pygame.mouse.get_pos()
+
+
+def deside(name):
+    if name == "call or visit":
+        call_visit.create_screen()
+    elif name == "smile to the world":
+        smile.create_smile_screen()
 
 
 if __name__ == '__main__':
