@@ -1,7 +1,7 @@
 import pygame
 
-# VOLUNTEER_LIST = ['donate money', 'volunteer place', 'food donation', 'recycling', 'call or visit', 'smile to the world']
-VOLUNTEER_LIST = ['call or visit', 'smile to the world']
+VOLUNTEER_LIST = ['donate money', 'volunteer place', 'food donation', 'recycling', 'call or visit', 'smile to the world']
+# VOLUNTEER_LIST = ['call or visit', 'smile to the world']
 CITY_LIST_COMMUNITY_SERVICE = ['Ramat Gan', 'Tel Aviv', 'Bat Yam', 'Ashdod', 'Haifa', 'Petah Tikva']
 COMMUNITY_SERVICE = {'Ramat Gan': {'elderly people': ["עמך- ביקורי בית לניצולי שואה",
                                                       "יחידות סגולה- סיוע לקשישים מאושפזים במיצוי זכויותיהם",

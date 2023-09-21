@@ -4,7 +4,7 @@ import screen
 import volunteer_place
 
 
-def draw_screen():
+def draw_screen(deed):
     screen.screen.fill(consts.BACKGROUND_COLOR)
     screen.draw_starting_message()
     draw_deed(deed)

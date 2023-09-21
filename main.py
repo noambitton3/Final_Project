@@ -9,8 +9,8 @@ state = {
     "is_window_open": True,
     "first_window_open": True,
     "second_window_open": False,
-    "smile_window_open": False,
-    "call_window_open": False
+    "food_window_open": False,
+    "money_window_open": False
 }
 
 
@@ -32,7 +32,7 @@ def first_handle_user_events():
         if event.type == pygame.MOUSEBUTTONDOWN:
             mouse = mouse_location()
             if 225 <= mouse[0] <= 525 and 150 <= mouse[1] <= 350:
-                screen2.draw_screen()
+                screen2.draw_screen(screen2.deed)
                 state["first_window_open"] = False
                 state["second_window_open"] = True
 
@@ -45,7 +45,9 @@ def second_handle_user_events():
             mouse = mouse_location()
             if 70 <= mouse[0] <= 320 and 350 <= mouse[1] <= 500:
                 decide(screen2.deed)
-
+            if 440 <= mouse[0] <= 690 and 350 <= mouse[1] <= 500:
+                screen2.deed = screen2.choose_deed()
+                screen2.draw_screen(screen2.deed)
 
 
 def mouse_location():
@@ -57,6 +59,14 @@ def decide(name):
         call_visit.create_screen()
     elif name == "smile to the world":
         smile.create_smile_screen()
+    elif name == "food donation":
+        food_donation.create_screen()
+        state["food_window_open"] = True
+        state["second_window_open"] = False
+    elif name == "donate money":
+        donate_money.create_screen()
+        state["money_window_open"] = True
+        state["second_window_open"] = False
 
 
 if __name__ == '__main__':
