@@ -23,6 +23,8 @@ def main():
             first_handle_user_events()
         if state["second_window_open"]:
             second_handle_user_events()
+        if state["food_window_open"]:
+            food_handle_user_events()
     pygame.display.flip()
 
 
@@ -49,6 +51,14 @@ def second_handle_user_events():
             if 440 <= mouse[0] <= 690 and 350 <= mouse[1] <= 500:
                 screen2.deed = screen2.choose_deed()
                 screen2.draw_screen(screen2.deed)
+
+
+def food_handle_user_events():
+    for event in pygame.event.get():
+        if event.type == pygame.QUIT:
+            state["is_window_open"] = False
+        if event.type == pygame.MOUSEBUTTONDOWN:
+            mouse = mouse_location()
 
 
 def mouse_location():
