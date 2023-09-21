@@ -4,6 +4,7 @@ import call_visit
 import screen2
 import consts
 import smile
+import food_donate
 
 state = {
     "is_window_open": True,
@@ -60,7 +61,7 @@ def decide(name):
     elif name == "smile to the world":
         smile.create_smile_screen()
     elif name == "food donation":
-        food_donation.create_screen()
+        food_donate.create_screen()
         state["food_window_open"] = True
         state["second_window_open"] = False
     elif name == "donate money":

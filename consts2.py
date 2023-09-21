@@ -26,3 +26,20 @@ TEXT_2_SIZE = 80
 PLAY_SMILE_PHOTO = pygame.image.load('smile_2.png')
 PLAY_SMILE_PHOTO = pygame.transform.scale(PLAY_SMILE_PHOTO, (170, 170))
 
+
+# food donate dict
+food_city_dict = {"Tel Aviv": ["ארגון לתת- המסגר 44",
+                               "חסדי נעמי- תשרי 54"],
+                  'Jerusalem': ['מאיר פנים- הצבי 11',
+                                'מזון לחיים- בן יהודה 2'],
+                  'Petah Tikva': ['פתחון לב- זבוטינסקי 4',
+                                  'מזון לחיים- מכבים 17']
+                   }
+
+TITLE_FOOD = 'Food Donation'
+TITLE_FOOD_SIZE = 70
+TITLE_FOOD_LOCATION = (90, 20)
+
+TEXT_FOOD_1 = 'Choose a city:'
+TEXT_FOOD_SIZE = 50
+TEXT_FOOD_LOCATION = (30, 60)
