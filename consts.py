@@ -1,7 +1,6 @@
 import pygame
 
-VOLUNTEER_LIST = ['donate money', 'volunteer place', 'food donation', 'recycling', 'call or visit', 'smile to the world']
-# VOLUNTEER_LIST = ['call or visit', 'smile to the world']
+VOLUNTEER_LIST = ['donate money', 'food donation', 'call or visit', 'smile to the world', 'recycle']
 CITY_LIST_COMMUNITY_SERVICE = ['Ramat Gan', 'Tel Aviv', 'Bat Yam', 'Ashdod', 'Haifa', 'Petah Tikva']
 COMMUNITY_SERVICE = {'Ramat Gan': {'elderly people': ["עמך- ביקורי בית לניצולי שואה",
                                                       "יחידות סגולה- סיוע לקשישים מאושפזים במיצוי זכויותיהם",
@@ -68,13 +67,13 @@ MONEY_LOCATION = STARTING_LOCATION
 MONEY1 = "How much money do you want to donate?"
 MONEY1_FONT_SIZE = 26
 MONEY1_COLOR = BLACK
-MONEY1_LOCATION = (150, 110)
+MONEY1_LOCATION = (150, 130)
 
 # money2 text
 MONEY2 = "these are our places, choose one of the options:"
 MONEY2_FONT_SIZE = MONEY1_FONT_SIZE
 MONEY2_COLOR = BLACK
-MONEY2_LOCATION = STARTING_LOCATION
+MONEY2_LOCATION = (130, 130)
 
 # money3 text
 MONEY3 = "Thank you for your donation!"
@@ -122,3 +121,31 @@ RIGHT_BUTTON_TEXT = "choose again"
 RIGHT_BUTTON_COLOR = WHITE
 RIGHT_BUTTON_SIZE = 40
 RIGHT_BUTTON_LOCATION = (455, 390)
+
+# money button photo
+MONEY_BUTTON_PHOTO = pygame.image.load('screen2_button.png')
+MONEY_BUTTON_PHOTO = pygame.transform.scale(MONEY_BUTTON_PHOTO, (250, 150))
+
+# 50 button text
+NUM50_BUTTON_TEXT = "50"
+NUM50_BUTTON_COLOR = WHITE
+NUM50_BUTTON_SIZE = 50
+NUM50_BUTTON_LOCATION = (165, 240)
+
+# 100 button text
+NUM100_BUTTON_TEXT = "100"
+NUM100_BUTTON_COLOR = WHITE
+NUM100_BUTTON_SIZE = NUM50_BUTTON_SIZE
+NUM100_BUTTON_LOCATION = (525, 240)
+
+# 200 button text
+NUM200_BUTTON_TEXT = "200"
+NUM200_BUTTON_COLOR = WHITE
+NUM200_BUTTON_SIZE = NUM50_BUTTON_SIZE
+NUM200_BUTTON_LOCATION = (150, 390)
+
+# 500 button text
+NUM500_BUTTON_TEXT = "500"
+NUM500_BUTTON_COLOR = WHITE
+NUM500_BUTTON_SIZE = NUM50_BUTTON_SIZE
+NUM500_BUTTON_LOCATION = (525, 390)

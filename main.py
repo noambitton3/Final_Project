@@ -12,7 +12,8 @@ state = {
     "first_window_open": True,
     "second_window_open": False,
     "food_window_open": False,
-    "money_window_open": False
+    "money_window_open": False,
+    "second_money_window_open": False
 }
 
 
@@ -27,6 +28,8 @@ def main():
         if state["food_window_open"]:
             food_handle_user_events()
         if state["money_window_open"]:
+            money_handle_user_events()
+        if state["second_money_window_open"]:
             money_handle_user_events()
     pygame.display.flip()
 
@@ -76,6 +79,30 @@ def money_handle_user_events():
             state["is_window_open"] = False
         if event.type == pygame.MOUSEBUTTONDOWN:
             mouse = mouse_location()
+            # 50
+            if 70 <= mouse[0] <= 320 and 200 <= mouse[1] <= 350:
+                state["money_window_open"] = False
+                state["second_money_window_open"] = True
+                donate_money.second_screen()
+                amount = 50
+            # 100
+            elif 440 <= mouse[0] <= 640 and 200 <= mouse[1] <= 350:
+                state["money_window_open"] = False
+                state["second_money_window_open"] = True
+                donate_money.second_screen()
+                amount = 100
+            # 200
+            elif 70 <= mouse[0] <= 320 and 350 <= mouse[1] <= 500:
+                state["money_window_open"] = False
+                state["second_money_window_open"] = True
+                donate_money.second_screen()
+                amount = 200
+            # 500
+            elif 440 <= mouse[0] <= 640 and 350 <= mouse[1] <= 500:
+                state["money_window_open"] = False
+                state["second_money_window_open"] = True
+                donate_money.second_screen()
+                amount = 500
 
 
 def mouse_location():
