@@ -32,3 +32,5 @@ def draw_button():
     screen.screen.blit(consts2.CITY_BUTTON_PHOTO, (500, 200))
     screen.draw_text(consts2.THIRD_BUTTON_TEXT, consts2.THIRD_BUTTON_SIZE,
                      consts2.THIRD_BUTTON_COLOR, consts2.THIRD_BUTTON_LOCATION)
+
+#def tel_aviv():
