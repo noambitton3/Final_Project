@@ -128,12 +128,12 @@ def recycling_handle_user_events():
             state["is_window_open"] = False
         if event.type == pygame.MOUSEBUTTONDOWN:
             mouse = mouse_location()
-            # if 70 <= mouse[0] <= 270 and 200 <= mouse[1] <= 300:
-            #     food_donate.tel_aviv()
-            # if 285 <= mouse[0] <= 485 and 200 <= mouse[1] <= 300:
-            #     food_donate.jerusalem()
-            # if 500 <= mouse[0] <= 700 and 200 <= mouse[1] <= 300:
-            #     food_donate.petah_tikva()
+            if 70 <= mouse[0] <= 240 and 150 <= mouse[1] <= 350:
+                recycling.if_press_green()
+            if 290 <= mouse[0] <= 460 and 150 <= mouse[1] <= 350:
+                recycling.if_press_orange()
+            if 520 <= mouse[0] <= 690 and 150 <= mouse[1] <= 350:
+                recycling.if_press_blue()
         if event.type == pygame.KEYDOWN:
             if event.key == pygame.K_SPACE:
                 state["recycling_window_open"] = False

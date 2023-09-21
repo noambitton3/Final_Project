@@ -18,5 +18,34 @@ def draw_title_recycling():
                       consts.STARTING_COLOR, consts2.RECYCLING_TITLE_LOCATION)
 
 
+def organic_text():
+    screen.draw_text(consts2.GREEN_BIN_GAR, consts2.GREEN_BIN_GAR_SIZE,
+                     consts.EXPLAIN_COLOR, consts2.GREEN_BIN_GAR_LOCATION)
+
+
+def plastic_text():
+    screen.draw_text(consts2.ORANGE_BIN_GAR, consts2.ORANGE_BIN_GAR_SIZE,
+                     consts.EXPLAIN_COLOR, consts2.ORANGE_BIN_GAR_LOCATION)
+
+
+def paper_text():
+    screen.draw_text(consts2.BLUE_BIN_GAR, consts2.BLUE_BIN_GAR_SIZE,
+                     consts.EXPLAIN_COLOR, consts2.BLUE_BIN_GAR_LOCATION)
+
+
 def if_press_green():
     create_screen()
+    organic_text()
+    pygame.display.flip()
+
+
+def if_press_orange():
+    create_screen()
+    plastic_text()
+    pygame.display.flip()
+
+
+def if_press_blue():
+    create_screen()
+    paper_text()
+    pygame.display.flip()
