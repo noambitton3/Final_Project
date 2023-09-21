@@ -39,30 +39,68 @@ def go_to_text():
                      consts.EXPLAIN_COLOR, consts2.AFTER_CHOOSE_CITY_TEXT_LOCATION)
 
 
-def city_addresses_tel_aviv():
-    screen.draw_text(consts2.TEL_AVIV_ADDRESS, consts2.ADDRESS_SIZE,
-                     consts.EXPLAIN_COLOR, consts2.ADDRESS_LOCATION)
+def city_addresses1_tel_aviv():
+    screen.draw_text(consts2.TEL_AVIV_ADDRESS1, consts2.ADDRESS_SIZE,
+                     consts.EXPLAIN_COLOR, consts2.ADDRESS1_LOCATION)
 
-def city_addresses_jerusalem():
-    screen.draw_text(consts2.JERUSALEM_ADDRESS, consts2.ADDRESS_SIZE,
-                     consts.EXPLAIN_COLOR, consts2.ADDRESS_LOCATION)
+def city_addresses1_jerusalem():
+    screen.draw_text(consts2.JERUSALEM_ADDRESS1, consts2.ADDRESS_SIZE,
+                     consts.EXPLAIN_COLOR, consts2.ADDRESS1_LOCATION)
 
-def city_addresses_petah_tikva():
-    screen.draw_text(consts2.PETAH_TIKVA_ADDRESS, consts2.ADDRESS_SIZE,
-                     consts.EXPLAIN_COLOR, consts2.ADDRESS_LOCATION)
+def city_addresses1_petah_tikva():
+    screen.draw_text(consts2.PETAH_TIKVA_ADDRESS1, consts2.ADDRESS_SIZE,
+                     consts.EXPLAIN_COLOR, consts2.ADDRESS1_LOCATION)
 
+
+
+def city_addresses2_tel_aviv():
+    screen.draw_text(consts2.TEL_AVIV_ADDRESS2, consts2.ADDRESS_SIZE,
+                     consts.EXPLAIN_COLOR, consts2.ADDRESS2_LOCATION)
+
+def city_addresses2_jerusalem():
+    screen.draw_text(consts2.JERUSALEM_ADDRESS2, consts2.ADDRESS_SIZE,
+                     consts.EXPLAIN_COLOR, consts2.ADDRESS2_LOCATION)
+
+def city_addresses2_petah_tikva():
+    screen.draw_text(consts2.PETAH_TIKVA_ADDRESS2, consts2.ADDRESS_SIZE,
+                     consts.EXPLAIN_COLOR, consts2.ADDRESS2_LOCATION)
+
+
+def thank_you_text():
+    screen.draw_text(consts2.THANK_YOU_TEXT, consts2.THANK_YOU_TEXT_SIZE,
+                     consts.EXPLAIN_COLOR, consts2.THANK_YOU_TEXT_LOCATION)
+
+def shopping_list():
+    screen.draw_text(consts2.SHOPPING_LIST_TITLE, consts2.SHOPPING_LIST_TITLE_SIZE,
+                     consts.EXPLAIN_COLOR, consts2.SHOPPING_LIST_TITLE_LOCATION)
+    screen.draw_text(consts2.PRODUCT_1, consts2.SHOPPING_LIST_PRODUCT_SIZE,
+                     consts.EXPLAIN_COLOR, consts2.SHOPPING_LIST_PRODUCT_1_LOCATION)
+    screen.draw_text(consts2.PRODUCT_2, consts2.SHOPPING_LIST_PRODUCT_SIZE,
+                     consts.EXPLAIN_COLOR, consts2.SHOPPING_LIST_PRODUCT_2_LOCATION)
+    screen.draw_text(consts2.PRODUCT_3, consts2.SHOPPING_LIST_PRODUCT_SIZE,
+                     consts.EXPLAIN_COLOR, consts2.SHOPPING_LIST_PRODUCT_3_LOCATION)
+    screen.draw_text(consts2.PRODUCT_4, consts2.SHOPPING_LIST_PRODUCT_SIZE,
+                     consts.EXPLAIN_COLOR, consts2.SHOPPING_LIST_PRODUCT_4_LOCATION)
 
 def tel_aviv():
     create_screen()
     go_to_text()
-    city_addresses_tel_aviv()
+    city_addresses1_tel_aviv()
+    city_addresses2_tel_aviv()
+    thank_you_text()
+    screen.screen.blit(consts2.NOTE_PHOTO, (540, 290))
+    shopping_list()
     pygame.display.flip()
 
 
 def jerusalem():
     create_screen()
     go_to_text()
-    city_addresses_jerusalem()
+    city_addresses1_jerusalem()
+    city_addresses2_jerusalem()
+    thank_you_text()
+    screen.screen.blit(consts2.NOTE_PHOTO, (540, 290))
+    shopping_list()
     pygame.display.flip()
 
 
@@ -70,5 +108,9 @@ def jerusalem():
 def petah_tikva():
     create_screen()
     go_to_text()
-    city_addresses_petah_tikva()
+    city_addresses1_petah_tikva()
+    city_addresses2_petah_tikva()
+    thank_you_text()
+    screen.screen.blit(consts2.NOTE_PHOTO, (540, 290))
+    shopping_list()
     pygame.display.flip()

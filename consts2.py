@@ -27,15 +27,7 @@ PLAY_SMILE_PHOTO = pygame.image.load('smile_2.png')
 PLAY_SMILE_PHOTO = pygame.transform.scale(PLAY_SMILE_PHOTO, (170, 170))
 
 
-# food donate dict
-FOOD_CITY_DICT = {"Tel Aviv": ["ארגון לתת- המסגר 44",
-                               "חסדי נעמי- תשרי 54"],
-                  'Jerusalem': ['מאיר פנים- הצבי 11',
-                                'מזון לחיים- בן יהודה 2'],
-                  'Petah Tikva': ['פתחון לב- זבוטינסקי 4',
-                                  'מזון לחיים- מכבים 17']
-                   }
-
+# food donate
 TITLE_FOOD = 'Food Donation'
 TITLE_FOOD_SIZE = 90
 TITLE_FOOD_LOCATION = (90, 20)
@@ -62,9 +54,33 @@ AFTER_CHOOSE_CITY_TEXT_SIZE = 40
 AFTER_CHOOSE_CITY_TEXT_LOCATION = (100, 300)
 
 
-TEL_AVIV_ADDRESS = FOOD_CITY_DICT["Tel Aviv"]
-JERUSALEM_ADDRESS = FOOD_CITY_DICT["Jerusalem"]
-PETAH_TIKVA_ADDRESS = FOOD_CITY_DICT["Petah Tikva"]
-ADDRESS_SIZE = 20
-ADDRESS_LOCATION = (530, 225)
+TEL_AVIV_ADDRESS1= "Latet- Hamasger 44"
+TEL_AVIV_ADDRESS2 = 'Hasdei Neomy- Tishrei 54'
+JERUSALEM_ADDRESS1 = 'Meir panim- Hazvi 11'
+JERUSALEM_ADDRESS2 = 'Mazon Lahaim- Ben Yehoda 2'
+PETAH_TIKVA_ADDRESS1 = 'Pithon Lev- Zabotinsky 4'
+PETAH_TIKVA_ADDRESS2 = 'Mazon Lahaim- Macabim 17'
 
+ADDRESS_SIZE = 30
+ADDRESS1_LOCATION = (100, 370)
+ADDRESS2_LOCATION = (100, 420)
+
+THANK_YOU_TEXT = 'Thank you fot helping the community!'
+THANK_YOU_TEXT_SIZE = 20
+THANK_YOU_TEXT_LOCATION = (150, 470)
+
+NOTE_PHOTO = pygame.image.load('note.png')
+NOTE_PHOTO = pygame.transform.scale(NOTE_PHOTO, (200, 200))
+
+SHOPPING_LIST_TITLE = 'You should bring:'
+SHOPPING_LIST_TITLE_SIZE = 20
+SHOPPING_LIST_TITLE_LOCATION = (570, 330)
+SHOPPING_LIST_PRODUCT_SIZE = 15
+SHOPPING_LIST_PRODUCT_1_LOCATION = (590, 360)
+SHOPPING_LIST_PRODUCT_2_LOCATION = (590, 385)
+SHOPPING_LIST_PRODUCT_3_LOCATION = (590, 410)
+SHOPPING_LIST_PRODUCT_4_LOCATION = (590, 435)
+PRODUCT_1 = '- Bread'
+PRODUCT_2 = '- Milk'
+PRODUCT_3 = '- Rice'
+PRODUCT_4 = '- Meat'
